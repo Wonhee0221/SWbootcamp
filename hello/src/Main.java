@@ -8,26 +8,35 @@ class Car{
     //객체가 생성이되는 안되는 어느거에도 다 나오기때문에 이거 쓸때 조심해야함.
 
     void study(){
-        System.out.println("study!!!");
+        System.out.println("방가윤 실망이야!!!");
     }
+    void  nonReturn(int x,int y){
+        int z = x + y;
+    }
+
 }
 
 public class Main{
+//    static int add(int x, int y){
+//        x *= 10;
+//        System.out.println(x);
+//        return x+y;
+//    }
     public static void main(String[] args){
-        Car car= new Car();
-        car.id =1;
-        car.speed=10;
-
-        Car car2 = new Car();
-        car2.id =2;
-        car2.speed=10;
-
-        car.width = 5;
-
-        System.out.println(car.id);
-        System.out.println(car.width);
-        System.out.println(car2.width);
-
-
+//        Car car1 = new Car();
+//        int x = 5;
+//        int y = 6;
+//        System.out.println(add(x,y));
+//
+//        System.out.println(x);
+//        add(x,y);
+        Ref ref = new Ref();
+        System.out.println(ref.x);
+        change(ref);
+        System.out.println(ref.x);
+    }
+    static void change(Ref ref){
+        ref.x=10;
+        System.out.println(ref.x);
     }
 }
