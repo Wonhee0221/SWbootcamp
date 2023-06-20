@@ -1,4 +1,4 @@
-package ch03_연산자;
+package code.ch03_연산자;
 
 public class ex14_쉬프트연산자 {
 	public static void main(String[] args) {
