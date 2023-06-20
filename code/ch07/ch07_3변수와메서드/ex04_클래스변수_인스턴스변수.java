@@ -1,4 +1,4 @@
-package ch07.ch07_3변수와메서드;
+package code.ch07.ch07_3변수와메서드;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class ex04_클래스변수_인스턴스변수 {
 	public static void main(String args[]) {
 		System.out.println("Card.width = " + Card.width);
 		System.out.println("Card.height = " + Card.height);
+
 
 		Card c1 = new Card();
 		c1.kind = "Heart";
